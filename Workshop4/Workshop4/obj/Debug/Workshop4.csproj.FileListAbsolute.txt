@@ -1,0 +1,5 @@
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop4\Workshop4\bin\Debug\Workshop4.exe.config
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop4\Workshop4\bin\Debug\Workshop4.exe
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop4\Workshop4\bin\Debug\Workshop4.pdb
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop4\Workshop4\obj\Debug\Workshop4.exe
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop4\Workshop4\obj\Debug\Workshop4.pdb

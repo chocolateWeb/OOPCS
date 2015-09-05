@@ -1,0 +1,5 @@
+C:\Users\Keljin Chow\Documents\Visual Studio 2015\Projects\Workshop3\Workshop3_3\bin\Debug\Workshop3_3.exe.config
+C:\Users\Keljin Chow\Documents\Visual Studio 2015\Projects\Workshop3\Workshop3_3\bin\Debug\Workshop3_3.exe
+C:\Users\Keljin Chow\Documents\Visual Studio 2015\Projects\Workshop3\Workshop3_3\bin\Debug\Workshop3_3.pdb
+C:\Users\Keljin Chow\Documents\Visual Studio 2015\Projects\Workshop3\Workshop3_3\obj\Debug\Workshop3_3.exe
+C:\Users\Keljin Chow\Documents\Visual Studio 2015\Projects\Workshop3\Workshop3_3\obj\Debug\Workshop3_3.pdb

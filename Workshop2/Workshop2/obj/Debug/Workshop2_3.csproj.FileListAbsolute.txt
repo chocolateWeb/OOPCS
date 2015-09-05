@@ -1,0 +1,5 @@
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop2_3\Workshop2_3\bin\Debug\Workshop2_3.exe.config
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop2_3\Workshop2_3\bin\Debug\Workshop2_3.exe
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop2_3\Workshop2_3\bin\Debug\Workshop2_3.pdb
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop2_3\Workshop2_3\obj\Debug\Workshop2_3.exe
+C:\Users\Keljin Chow\documents\visual studio 2015\Projects\Workshop2_3\Workshop2_3\obj\Debug\Workshop2_3.pdb
