@@ -3,3 +3,8 @@ c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop5\Workshop5_1
 c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop5\Workshop5_1\bin\Debug\Workshop5_1.pdb
 c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop5\Workshop5_1\obj\Debug\Workshop5_1.exe
 c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop5\Workshop5_1\obj\Debug\Workshop5_1.pdb
+C:\OOPCS\OOPCS\Workshop5\Workshop5_1\bin\Debug\Workshop5_1.exe.config
+C:\OOPCS\OOPCS\Workshop5\Workshop5_1\bin\Debug\Workshop5_1.exe
+C:\OOPCS\OOPCS\Workshop5\Workshop5_1\bin\Debug\Workshop5_1.pdb
+C:\OOPCS\OOPCS\Workshop5\Workshop5_1\obj\Debug\Workshop5_1.exe
+C:\OOPCS\OOPCS\Workshop5\Workshop5_1\obj\Debug\Workshop5_1.pdb

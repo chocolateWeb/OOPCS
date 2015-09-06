@@ -10,57 +10,58 @@ namespace Workshop5_2
     public class BankBranch
     {
         private string BranchName, BranchManager;
-        private ArrayList SavingsAccounts, CurrentAccounts, OverDraftAccounts;
+        private ArrayList BankAccts;
 
         public BankBranch(string bn, string bm)
         {
             BranchName = bn;
             BranchManager = bm;
-            SavingsAccounts = new ArrayList();
-            CurrentAccounts = new ArrayList();
-            OverDraftAccounts = new ArrayList();
-        }        
+            BankAccts = new ArrayList();
+        }
+
+        public void AddAccount(SavingsAccount a)
+        {
+            BankAccts.Add(a);
+        }
+
+        public void AddAccount(CurrentAccount a)
+        {
+            BankAccts.Add(a);
+        }
+
+        public void AddAccount(OverDraftAccount a)
+        {
+            BankAccts.Add(a);
+        }
+
+        public void PrintCustomers()
+        {
+            int counter = 1;
+            Console.WriteLine("Customers:");
+            foreach (Object obj in BankAccts)
+            {
+                BankAccount b = (BankAccount)obj;
+                Console.WriteLine(counter + ". " + b.GetCustomer.GetName);
+                counter++;
+            }
+
+            Console.WriteLine();
+        }
 
         public void PrintAll()
         {
-            foreach (Object obj in SavingsAccounts)
+            foreach (Object obj in BankAccts)
             {
-                SavingsAccount b = (SavingsAccount)obj;
-                Console.WriteLine(b.Show());
-            }
-
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                Console.WriteLine(b.Show());
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
+                BankAccount b = (BankAccount)obj;
                 Console.WriteLine(b.Show());
             }
         }
 
         public void Deposit(double amt, string acctNum)
         {
-            foreach (Object obj in SavingsAccounts)
+            foreach (Object obj in BankAccts)
             {
-                SavingsAccount b = (SavingsAccount)obj;
-                if (b.AccountNumber.Equals(acctNum))
-                    b.Deposit(amt);
-            }
-
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                if (b.AccountNumber.Equals(acctNum))
-                    b.Deposit(amt);
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
+                BankAccount b = (BankAccount)obj;
                 if (b.AccountNumber.Equals(acctNum))
                     b.Deposit(amt);
             }
@@ -68,23 +69,9 @@ namespace Workshop5_2
 
         public void Withdraw(double amt, string acctNum)
         {
-            foreach (Object obj in SavingsAccounts)
+            foreach (Object obj in BankAccts)
             {
-                SavingsAccount b = (SavingsAccount)obj;
-                if (b.AccountNumber.Equals(acctNum))
-                    b.Withdraw(amt);
-            }
-
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                if (b.AccountNumber.Equals(acctNum))
-                    b.Withdraw(amt);
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
+                BankAccount b = (BankAccount)obj;
                 if (b.AccountNumber.Equals(acctNum))
                     b.Withdraw(amt);
             }
@@ -92,114 +79,34 @@ namespace Workshop5_2
 
         public void TransferTo(double amt, string fromAcctNum, string toAcctNum)
         {
-            foreach (Object obj in SavingsAccounts)
+            foreach (Object obj in BankAccts)
             {
-                SavingsAccount b = (SavingsAccount)obj;
+                BankAccount b = (BankAccount)obj;
                 if (b.AccountNumber.Equals(fromAcctNum))
                     b.Withdraw(amt);
                 if (b.AccountNumber.Equals(toAcctNum))
                     b.Deposit(amt);
             }
-
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                if (b.AccountNumber.Equals(fromAcctNum))
-                    b.Withdraw(amt);
-                if (b.AccountNumber.Equals(toAcctNum))
-                    b.Deposit(amt);
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
-                if (b.AccountNumber.Equals(fromAcctNum))
-                    b.Withdraw(amt);
-                if (b.AccountNumber.Equals(toAcctNum))
-                    b.Deposit(amt);
-            }
-
         }
 
         public void CreditInterest()
         {
-            foreach (Object obj in SavingsAccounts)
+            foreach (Object obj in BankAccts)
             {
-                SavingsAccount b = (SavingsAccount)obj;
-                b.CreditInterest();
-            }
-
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                b.CreditInterest();
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
+                BankAccount b = (BankAccount)obj;
                 b.CreditInterest();
             }
         }
-
-        public void AddAccount(SavingsAccount a)
-        {
-            SavingsAccounts.Add(a);
-        }
-
-        public void AddAccount(CurrentAccount a)
-        {
-            CurrentAccounts.Add(a);
-        }
-
-        public void AddAccount(OverDraftAccount a)
-        {
-            OverDraftAccounts.Add(a);
-        }
-
-        public void PrintCustomers()
-        {
-            Console.WriteLine("Customers");
-            foreach (Object obj in SavingsAccounts)
-            {
-                SavingsAccount b = (SavingsAccount)obj;
-                Console.WriteLine(b.GetCustomer.GetName);
-            }
-
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                Console.WriteLine(b.GetCustomer.GetName);
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
-                Console.WriteLine(b.GetCustomer.GetName);
-            }
-        }        
 
         public double TotalDeposits()
         {
             double totalDeposits = 0;
 
-            foreach (Object obj in SavingsAccounts)
+            foreach (Object obj in BankAccts)
             {
-                SavingsAccount b = (SavingsAccount)obj;
+                BankAccount b = (BankAccount)obj;
                 totalDeposits += b.Deposits;
             }
-
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                totalDeposits += b.Deposits;
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
-                totalDeposits += b.Deposits;
-            }            
 
             return totalDeposits;
         }
@@ -208,46 +115,22 @@ namespace Workshop5_2
         {
             double totalInterestPaid = 0;
 
-            foreach (Object obj in SavingsAccounts)
+            foreach (Object obj in BankAccts)
             {
-                SavingsAccount b = (SavingsAccount)obj;
+                BankAccount b = (BankAccount)obj;
                 totalInterestPaid += b.InterestPaid;
             }
 
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                totalInterestPaid += b.InterestPaid;
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
-                totalInterestPaid += b.InterestPaid;
-            }
-            
-            return totalInterestPaid;
+            return Math.Abs(totalInterestPaid);
         }
 
         public double TotalInterestEarned()
         {
             double totalInterestEarned = 0;
 
-            foreach (Object obj in SavingsAccounts)
+            foreach (Object obj in BankAccts)
             {
-                SavingsAccount b = (SavingsAccount)obj;
-                totalInterestEarned += b.InterestEarned;
-            }
-
-            foreach (Object obj in CurrentAccounts)
-            {
-                CurrentAccount b = (CurrentAccount)obj;
-                totalInterestEarned += b.InterestEarned;
-            }
-
-            foreach (Object obj in OverDraftAccounts)
-            {
-                OverDraftAccount b = (OverDraftAccount)obj;
+                BankAccount b = (BankAccount)obj;
                 totalInterestEarned += b.InterestEarned;
             }
 

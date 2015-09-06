@@ -26,7 +26,7 @@ namespace Workshop5_2
             }
         }
 
-        public new string Show()
+        public override string Show()
         {
             return "Current Account: " + " " + base.Show() + " " + base.InterestRate + "%\n";
         }

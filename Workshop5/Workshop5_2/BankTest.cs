@@ -21,41 +21,49 @@ namespace Workshop5_2
             b.AddAccount(new CurrentAccount("001-001-002", kim, 5000));
             b.AddAccount(new OverDraftAccount("001-001-003", lee, 100));            
 
-            b.PrintCustomers();                       
-
-            Console.WriteLine("Total Deposits: {0}", b.TotalDeposits());
-            Console.WriteLine("Total Interest Earned: {0}", b.TotalInterestEarned());
-            Console.WriteLine("Total Interest Paid: {0}", b.TotalInterestPaid());
-
+            b.PrintCustomers();
             b.PrintAll();
+                        
+            Console.WriteLine("Total Deposits: {0:c}", b.TotalDeposits());
+            Console.WriteLine("Total Interest Earned: {0:c}", b.TotalInterestEarned());
+            Console.WriteLine("Total Interest Paid: {0:c}", b.TotalInterestPaid());
+            Console.WriteLine();                    
 
             b.Deposit(100, "001-001-001");
             b.PrintAll();
 
-            Console.WriteLine("Total Deposits: {0}", b.TotalDeposits());
-            Console.WriteLine("Total Interest Earned: {0}", b.TotalInterestEarned());
-            Console.WriteLine("Total Interest Paid: {0}", b.TotalInterestPaid());
+            Console.WriteLine();
+            Console.WriteLine("Total Deposits: {0:c}", b.TotalDeposits());
+            Console.WriteLine("Total Interest Earned: {0:c}", b.TotalInterestEarned());
+            Console.WriteLine("Total Interest Paid: {0:c}", b.TotalInterestPaid());
+            Console.WriteLine();
 
-            b.Withdraw(1000, "001-001-002");
+            b.Withdraw(200, "001-001-002");
             b.PrintAll();
 
-            Console.WriteLine("Total Deposits: {0}", b.TotalDeposits());
-            Console.WriteLine("Total Interest Earned: {0}", b.TotalInterestEarned());
-            Console.WriteLine("Total Interest Paid: {0}", b.TotalInterestPaid());
+            Console.WriteLine();
+            Console.WriteLine("Total Deposits: {0:c}", b.TotalDeposits());
+            Console.WriteLine("Total Interest Earned: {0:c}", b.TotalInterestEarned());
+            Console.WriteLine("Total Interest Paid: {0:c}", b.TotalInterestPaid());
+            Console.WriteLine();
 
-            b.TransferTo(1000, "001-001-003", "001-001-002");
+            b.TransferTo(300, "001-001-003", "001-001-002");
             b.PrintAll();
 
-            Console.WriteLine("Total Deposits: {0}", b.TotalDeposits());
-            Console.WriteLine("Total Interest Earned: {0}", b.TotalInterestEarned());
-            Console.WriteLine("Total Interest Paid: {0}", b.TotalInterestPaid());
+            Console.WriteLine();
+            Console.WriteLine("Total Deposits: {0:c}", b.TotalDeposits());
+            Console.WriteLine("Total Interest Earned: {0:c}", b.TotalInterestEarned());
+            Console.WriteLine("Total Interest Paid: {0:c}", b.TotalInterestPaid());
+            Console.WriteLine();
 
             b.CreditInterest();
             b.PrintAll();
 
-            Console.WriteLine("Total Deposits: {0}", b.TotalDeposits());
-            Console.WriteLine("Total Interest Earned: {0}", b.TotalInterestEarned());
-            Console.WriteLine("Total Interest Paid: {0}", b.TotalInterestPaid());
+            Console.WriteLine();
+            Console.WriteLine("Total Deposits: {0:c}", b.TotalDeposits());
+            Console.WriteLine("Total Interest Earned: {0:c}", b.TotalInterestEarned());
+            Console.WriteLine("Total Interest Paid: {0:c}", b.TotalInterestPaid());
+            Console.WriteLine();
         }
     }
 }
