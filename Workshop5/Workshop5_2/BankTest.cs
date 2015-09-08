@@ -23,12 +23,13 @@ namespace Workshop5_2
 
             b.PrintCustomers();
             b.PrintAll();
-                        
+
+            Console.WriteLine();
             Console.WriteLine("Total Deposits: {0:c}", b.TotalDeposits());
             Console.WriteLine("Total Interest Earned: {0:c}", b.TotalInterestEarned());
             Console.WriteLine("Total Interest Paid: {0:c}", b.TotalInterestPaid());
-            Console.WriteLine();                    
-
+            Console.WriteLine();
+                       
             b.Deposit(100, "001-001-001");
             b.PrintAll();
 

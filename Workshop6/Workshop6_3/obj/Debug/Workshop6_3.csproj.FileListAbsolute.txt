@@ -1,0 +1,6 @@
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop6\Workshop6_3\bin\Debug\Workshop6_3.exe.config
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop6\Workshop6_3\bin\Debug\Workshop6_3.exe
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop6\Workshop6_3\bin\Debug\Workshop6_3.pdb
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop6\Workshop6_3\obj\Debug\Workshop6_3.exe
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop6\Workshop6_3\obj\Debug\Workshop6_3.pdb
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop6\Workshop6_3\obj\Debug\Workshop6_3.csprojResolveAssemblyReference.cache

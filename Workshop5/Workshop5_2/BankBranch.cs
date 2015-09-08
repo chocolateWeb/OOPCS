@@ -16,7 +16,7 @@ namespace Workshop5_2
         {
             BranchName = bn;
             BranchManager = bm;
-            BankAccts = new ArrayList();
+            BankAccts = new ArrayList();            
         }
 
         public void AddAccount(SavingsAccount a)
@@ -106,7 +106,7 @@ namespace Workshop5_2
             {
                 BankAccount b = (BankAccount)obj;
                 totalDeposits += b.Deposits;
-            }
+            }       
 
             return totalDeposits;
         }
@@ -120,7 +120,7 @@ namespace Workshop5_2
                 BankAccount b = (BankAccount)obj;
                 totalInterestPaid += b.InterestPaid;
             }
-
+            
             return Math.Abs(totalInterestPaid);
         }
 

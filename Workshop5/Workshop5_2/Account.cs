@@ -80,7 +80,7 @@ namespace Workshop5_2
             var numberFormat = (NumberFormatInfo)CultureInfo.CurrentCulture.NumberFormat.Clone();
             numberFormat.CurrencyNegativePattern = 1;
 
-            return "Your Bank Account Details" + "\n" + "-------------------------------------------------------------" + "\n" + accountNumber + "\t " + customer.GetName + "\t" + "Age:" + customer.GetAge() + "\t" + balance.ToString("C2", numberFormat).PadRight(10, ' ') + "\t";
+            return "Your Bank Account Details" + "\n" + "-------------------------------------------------------------" + "\n" + accountNumber + "   " + customer.GetName + "\t" + "Age:" + customer.GetAge() + "\t" + balance.ToString("C", numberFormat) + "     ";
         }
     }
 }

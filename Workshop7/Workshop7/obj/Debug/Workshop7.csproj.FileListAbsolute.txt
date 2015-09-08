@@ -1,0 +1,5 @@
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop7\Workshop7\bin\Debug\Workshop7.exe.config
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop7\Workshop7\bin\Debug\Workshop7.exe
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop7\Workshop7\bin\Debug\Workshop7.pdb
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop7\Workshop7\obj\Debug\Workshop7.exe
+c:\users\keljin chow\documents\visual studio 2015\Projects\Workshop7\Workshop7\obj\Debug\Workshop7.pdb
